@@ -15,7 +15,7 @@ yields the output of (with some whitespace removed):
 ```
 Notice the values of `3`, `4`, `86.2` and `null` are not strings!  The main benefit here is that the numeric fields are output as Javascript numerics and not strings.  If used to import to something like [Firestore](https://firebase.google.com/docs/firestore/), the values will maintain their Javascript datatype, not simply all being stored as strings.
 
-## Trying It Out:
+# Trying It Out
 1. Clone this repository to your machine.  For example:
     - ```git clone https://github.com/gregfenton/convert-phpmyadmin-json-export```
 1. Go to the demo phpMyAdmin site, log in as user: root pass: (no password)
@@ -37,11 +37,11 @@ Notice the values of `3`, `4`, `86.2` and `null` are not strings!  The main bene
 1. Run the code in this script: 
     - ```node convertPhpJsonExport.js > convertedOutput.json```
 
-## Debugging
+# Debugging
 By default, debug logging is turned off.  You can enable it, simply modify the line:
     ```const doLog = false;```
 to
     ```const doLog = true;```
 
-## Using Your Own phpMyAdmin JSON export
+# Using Your Own phpMyAdmin JSON export
 Follow steps 7 thru 10 using your own export .json file.
