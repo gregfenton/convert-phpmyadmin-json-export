@@ -1,25 +1,8 @@
-// To use:
-// 1. Copy all of this code to a new script file called "convertPhpJsonExport.js"
-// 2. Go to the demo phpMyAdmin site, log in as user: root pass: (no password)
-//      https://demo.phpmyadmin.net/STABLE/?pma_username=root
-// 3. At the top of the window, click "Export"
-// 4. Set:
-//       Export method: quick
-//       Format: JSON
-// 5. Click "Go"
-// 6. You just downloaded a JSON file.  Copy it to the same directory that 
-//    convertPhpJsonExport.js is in.
-// 7. Rename the JSON file so that its extension is ".js".  For example:
-//          mv 192_168_30_23.json 192_168_30_23.js
-// 8. Edit the JSON file by adding the following as the first line of the file:
-//          exports.mysqlData =
-// 9. In the line below these instructions (line 22 of this file), have the
-//    jsonData variable load this newly downloaded JSON data.  For example:
-//        var jsonData = require("./192_168_30_23").mysqlData;
-// 10. Run the code in this script:
-//        node convertPhpJsonExport.js > convertedOutput.json
 //
-var jsonData = require("./mysqlTestData").mysqlData;
+// For instructions, see README.md
+//
+//var jsonData = require("./mysqlTestData").mysqlData;
+var jsonData = require("./test2").mysqlData;
 
 
 // set to "true" if you want (a lot of) debugging output
