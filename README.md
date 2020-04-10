@@ -1,7 +1,7 @@
 # convert-phpmyadmin-json-export
 Script that re-writes a JSON export from phpMyAdmin so that numeric fields are not strings.  For example, it takes the JSON export of:
 ```json
-[{ type:"table",name:"myuser",database:"mysql", data: [
+[{ "type":"table","name":"myuser","database":"mysql", data: [
    {"id": "3","firstName":"john","password":null,"maybeAFloat":"86.2"},
    {"id": "4","firstName":"mary","password":"*FF80A76950918AA85","maybeAFloat":"192.168.1.1"}]
  }]
