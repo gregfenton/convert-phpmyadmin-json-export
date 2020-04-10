@@ -13,9 +13,7 @@ yields the output of (with some whitespace removed):
      {"id": 4, "firstName": "mary", "password": "*FF80A76950918AA85", "maybeAFloat": "192.168.1.1",}]
 }]
 ```
-Notice the values of `3`, `4`, `86.2` and `null` are not strings!
-
-The main benefit here is that the numeric fields are output as Javascript numerics and not strings.
+Notice the values of `3`, `4`, `86.2` and `null` are not strings!  The main benefit here is that the numeric fields are output as Javascript numerics and not strings.  If used to import to something like [Firestore](https://firebase.google.com/docs/firestore/), the values will maintain their Javascript datatype, not simply all being stored as strings.
 
 ## Trying It Out:
 1. Clone this repository to your machine.  For example:
